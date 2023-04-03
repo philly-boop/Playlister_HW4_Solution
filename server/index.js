@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser')
 // CREATE OUR SERVER
 dotenv.config()
 const PORT = process.env.PORT || 4000;
-const app = express()
+const app = require('./app');
 
 // SETUP THE MIDDLEWARE
 app.use(express.urlencoded({ extended: true }))
